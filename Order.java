@@ -14,7 +14,7 @@ public class Order {
         this.totalPrice = calculateTotalPrice();
     }
 
-    // Calculate total price of all products in the order
+
     private float calculateTotalPrice() {
         float totalPrice = 0;
         for (product product : products) {
@@ -25,7 +25,7 @@ public class Order {
         return totalPrice;
     }
 
-    // Print order information
+
     public void printOrderInfo() {
         System.out.println("Order ID: " + orderId);
         System.out.println("Customer ID: " + customerId);
