@@ -12,7 +12,7 @@ public class Cart {
         this.products = new product[nProducts];
     }
 
-    // Setters and getters
+
     public int getCustomerId() {
         return customerId;
     }
@@ -37,14 +37,13 @@ public class Cart {
         this.products = products;
     }
 
-    // Add a product to the cart
+
     public void addProduct(product product, int index) {
         if (index >= 0 && index < nProducts) {
             products[index] = product;
         }
     }
 
-    // Remove a product from the cart
     public void removeProduct(int index) {
         if (index >= 0 && index < nProducts) {
             products[index] = null;
